@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXO10</title>
+    <title>EXO11</title>
     <style>
         * {
             font-family: 'Noto Sans TC', sans-serif;
@@ -29,7 +29,10 @@ font-family: 'Ubuntu', sans-serif; */
 
         
         .contentCard {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(3px, auto);
         }
 
         .contentCard .card {
@@ -50,8 +53,8 @@ font-family: 'Ubuntu', sans-serif; */
         }
 
         .contentCard .card .iconPart img {
-            width: 100%;
-            height: 100%;
+            width: 60%;
+            height: 80%;
 
         }
 
@@ -90,7 +93,7 @@ font-family: 'Ubuntu', sans-serif; */
             width: calc(100% - 100px);
             /* margin-top: 100px; */
             padding: 20px;
-            height: 70%;
+            height: 80%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 50px;
@@ -181,6 +184,9 @@ font-family: 'Ubuntu', sans-serif; */
 <body>
     <div class="wrapper">
         <div class="container">
+            <div>
+                <img src="./assets/karl-magnuson-LaHgrqo1ZRk-unsplash.jpg" alt="">
+            </div>
             <div class="SmallContent">
                 <div class="titleContent">
                     <span>Features</span>
@@ -212,10 +218,27 @@ font-family: 'Ubuntu', sans-serif; */
                             </div>
                         </div>
                     </div>
+                    <div class="card">
+                        <div class="iconPart">
+                            <img src="https://img.icons8.com/?size=2x&id=33479&format=png">
+                        </div>
+                        <div class="textContent">
+                            <div>
+                                <span> Des Documents</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="iconPart">
+                            <img src="https://img.icons8.com/?size=2x&id=33479&format=png">
+                        </div>
+                        <div class="textContent">
+                            <div>
+                                <span> Des Empreintes </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img src="./assets/karl-magnuson-LaHgrqo1ZRk-unsplash.jpg" alt="">
             </div>
         </div>
 
