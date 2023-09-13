@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXO15</title>
+    <title>EXO16</title>
     <style>
         * {
             font-family: 'Noto Sans TC', sans-serif;
@@ -55,6 +55,14 @@
             /* height: 100%; */
         }
 
+        .contentCard .cardTexte {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            /* height: 100%; */
+            margin-left: 100px;
+        }
+
         .contentCard .cardText .cardTextPart {
             background-color: #fff;
             display: flex;
@@ -62,10 +70,17 @@
             /* height: 100%; */
         }
 
+        .contentCard .cardTexte .cardTextPart {
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            /* height: 100%; */
+        }
 
         .contentCard .card .image {
             height: 100%;
-            width: 100%;
+            width: 80%;
+            margin-right: 50px;
         }
 
         .contentCard .cardText .textContent {
@@ -78,6 +93,18 @@
             flex-direction: column;
             padding: 10px
         }
+
+        .contentCard .cardTexte .textContent {
+            background-color: none;
+            width: 75%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 10px
+        }
+
 
         .contentCard .card .textContent h1 {
             /* font-family: 'Ubuntu', sans-serif; */
@@ -102,7 +129,21 @@
 
         }
 
-        .contentCard .cardText .cardTextPart .iconPart img{
+        .contentCard .cardTexte .cardTextPart .textContent span {
+            margin-top: 0px;
+            font-size: 12px;
+            font-weight: 200;
+            color: #bcbbbb;
+            line-height: 1.3;
+
+        }
+
+        .contentCard .cardText .cardTextPart .iconPart img {
+            height: 70%;
+            width: 70%;
+        }
+
+        .contentCard .cardTexte .cardTextPart .iconPart img {
             height: 70%;
             width: 70%;
         }
@@ -117,7 +158,7 @@
             height: 20%;
             width: 100%;
             background-color: none;
-            margin-bottom: 20px;
+            margin-bottom: 80px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -125,11 +166,14 @@
             /* margin-top: 50px; */
         }
 
-        .titleContent span {
+        .titleContent .Bio {
             /* height:80px; */
-            color: #656565;
+            color:  #bcbbbb;
             margin-top: 10px;
             font-size: 15px;
+            width: 50%;
+            text-align: center;
+            line-height: 1.8;
         }
 
         .titleContent h2 {
@@ -176,42 +220,43 @@
 <body>
     <div class="wrapper">
         <div class="titleContent">
-            <span>Features</span>
             <h2>Our Features</h2>
+            <div class="Bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus magnam maiores sint tempora
+                vero?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, aperiam.</div>
         </div>
         <div class="container">
             <div class="contentCard">
+                <div class="cardTexte">
+                    <div class="cardTextPart">
+                        <div class="iconPart">
+                            <img src="https://img.icons8.com/?size=2x&id=33479&format=png">
+                        </div>
+                        <div class="textContent">
+                            <h1>mon Titre</h1>
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
+                    <div class="cardTextPart">
+                        <div class="iconPart">
+                            <img src="https://img.icons8.com/?size=2x&id=33479&format=png">
+                        </div>
+                        <div class="textContent">
+                            <h1>mon Titre</h1>
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
+                    <div class="cardTextPart">
+                        <div class="iconPart">
+                            <img src="https://img.icons8.com/?size=2x&id=33479&format=png">
+                        </div>
+                        <div class="textContent">
+                            <h1>mon Titre</h1>
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="card">
                     <img src="./assets/karl-magnuson-LaHgrqo1ZRk-unsplash.jpg" alt="" class="image">
-                </div>
-                <div class="cardText">
-                    <div class="cardTextPart">
-                        <div class="iconPart">
-                            <img src="https://img.icons8.com/?size=2x&id=33479&format=png">
-                        </div>
-                        <div class="textContent">
-                            <h1>mon Titre</h1>
-                            <span>Lorem ipsum dolor sit amet.</span>
-                        </div>
-                    </div>
-                    <div class="cardTextPart">
-                        <div class="iconPart">
-                            <img src="https://img.icons8.com/?size=2x&id=33479&format=png">
-                        </div>
-                        <div class="textContent">
-                            <h1>mon Titre</h1>
-                            <span>Lorem ipsum dolor sit amet.</span>
-                        </div>
-                    </div>
-                    <div class="cardTextPart">
-                        <div class="iconPart">
-                            <img src="https://img.icons8.com/?size=2x&id=33479&format=png">
-                        </div>
-                        <div class="textContent">
-                            <h1>mon Titre</h1>
-                            <span>Lorem ipsum dolor sit amet.</span>
-                        </div>
-                    </div>
                 </div>
                 <div class="cardText">
                     <div class="cardTextPart">
